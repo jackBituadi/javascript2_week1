@@ -77,26 +77,11 @@ const bookArray = [
 console.log(bookArray[1].title);  
 
 
-/*function ShowBook(){
-    let newElement10 = document.createElement("div");
-    newElement10.setAttribute("id","myBook");
-    document.body.appendChild(newElement10);
+let $p = document.createElement("p");
+$p.innerHTML = ("This page includes a list of the 10 best-selling books of all-time. Best-selling books are ranked by number of copies sold, not my personal ratings.")
+$p.setAttribute("id","mypara");
+document.body.appendChild($p);
 
-    let newElement11 = document.createElement("h2");
-    newElement11.innerHTML= this.title;
-    newElement10.appendChild(newElement11);
-
-    let newElement12 = document.createElement("img");
-    newElement12.setAttribute("src",this.bookLink, "Alt","Book's cover image", "class", "image");
-    newElement12.setAttribute("Alt","Book's cover image");
-    newElement12.setAttribute("class", "image");
-    newElement10.appendChild(newElement12);
-
-    let newElement13 = document.createElement("p");
-    newElement13.innerHTML = "Book's id :" + this.bookId + "<br>" + "Author :" + this.author + "<br>" + "Language :" + this.language + "<br>" + "Number of copies sold :" + this.copiesSold+"<br>" +"<hr>";
-    newElement10.appendChild(newElement13);
-    
-} */
 
 
 for(let i=0;i<10;i++){
