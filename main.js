@@ -1,22 +1,4 @@
 
-const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
-for ( let i= 0 ; i<= months.length - 1; i++){
-    console.log(months[i]);
-}
-
-function myFunction(item,index){
-  console.log(item, index);
-}
-months.forEach(myFunction);
-
-function myFunction2(){
-    
-}
-
-/*const Myarray =[{title:"ala",author:"jack"},{title:"alis",author:"elli"},{title:"aga",author :"mikemoto"}];
-console.log(Myarray[1]);
-*/
 
 const bookArray = [
   {
