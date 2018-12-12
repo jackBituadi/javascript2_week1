@@ -1,3 +1,157 @@
+
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+for ( let i= 0 ; i<= months.length - 1; i++){
+    console.log(months[i]);
+}
+
+function myFunction(item,index){
+  console.log(item, index);
+}
+months.forEach(myFunction);
+
+function myFunction2(){
+    
+}
+
+/*const Myarray =[{title:"ala",author:"jack"},{title:"alis",author:"elli"},{title:"aga",author :"mikemoto"}];
+console.log(Myarray[1]);
+*/
+
+const bookArray = [
+  {
+	 bookId : "don_quixote",
+	 title : " Don Quixote ",
+	 author : " Miguel de Cervantes",
+	 language : "English",
+	 copiesSold : "500.000.000",
+	 bookLink : "https://images-na.ssl-images-amazon.com/images/I/41f%2BsbE608L._SX304_BO1,204,203,200_.jpg"
+ }, {
+	 bookId : "a_tale_of_two_cities",
+	 title : " A Tale of Two Cities ",
+	 author : " Charles Dickens",
+	 language : "English",
+	 copiesSold : "200.000.000",
+	 bookLink : "https://images-na.ssl-images-amazon.com/images/I/51irtb5ENpL._SX315_BO1,204,203,200_.jpg"
+ }, {
+	 bookId : "the_lord_of_the_rings",
+	 title : " The Lord of the Rings  ",
+	 author : " J.R.R. Tolkien",
+	 language : "English", 
+	 copiesSold : "142.000.000",
+	 bookLink : "https://images-na.ssl-images-amazon.com/images/I/51eq24cRtRL._SX331_BO1,204,203,200_.jpg"
+ }, {
+	 bookId : "the_little_prince",
+	 title : "The Little Prince",
+	 author : " Antoine de Saint-Exupery",
+	 language : "English",
+	 copiesSold : "500.000.000",
+	 bookLink : "https://images-na.ssl-images-amazon.com/images/I/41cI98inMmL._SX331_BO1,204,203,200_.jpg"
+ }, {
+	 bookId : "harry_potter_and_the_Sorcerer_stone",
+	 title : " Harry Potter and the Sorcerer's Stone ",
+	 author : " J.K. Rowling",
+	 language : "English",
+	 copiesSold : "107.000.000",
+	 bookLink : "https://images-na.ssl-images-amazon.com/images/I/51HSkTKlauL._SX346_BO1,204,203,200_.jpg"
+ },{
+	 bookId : "and_then_there_were_none",
+	 title : " And Then There Were None ",
+	 author : " Agatha Christie",
+	 language : "English",
+	 copiesSold : "100.000.000",
+	 bookLink : "https://images-na.ssl-images-amazon.com/images/I/51MlxNgCsyL._SX308_BO1,204,203,200_.jpg" 
+ }, {
+	 bookId : "the_dream_of_the_red_chamber",
+	 title : " The Dream of the Red Chamber ",
+	 author : " Cao Xueqin",
+	 language : "English",
+	 copiesSold : "100.000.000",
+	 bookLink : "https://images-na.ssl-images-amazon.com/images/I/41TCQH9ENcL._SX319_BO1,204,203,200_.jpg" 
+ }, {
+	 bookId : "the_hobbit",
+	 title : " The Hobbit ",
+	 author : " J.R.R. Tolkien", 
+	 language : "English", 
+	 copiesSold :"100.000.000" ,
+	 bookLink : "https://images-na.ssl-images-amazon.com/images/I/51e5yIs332L._SX284_BO1,204,203,200_.jpg"
+ }, {
+	 bookId :"she_a_history_of_adventure", 
+	 title :" She: A History of Adventure ",
+	 author :" H. Rider Haggard",
+	 language : "English",
+	 copiesSold : "100.000.000",
+	 bookLink : "https://images-na.ssl-images-amazon.com/images/I/51sZG-rk3IL._SX327_BO1,204,203,200_.jpg"
+ }, {
+	 bookId : "the_lion_the_witch_and_the_wardrobe", 
+	 title :" The Lion, the Witch and the Wardrobe ",
+	 author : "C.S. Lewis",
+	 language :  "English", 
+	 copiesSold :"85.000.000",
+	 bookLink : "https://images-na.ssl-images-amazon.com/images/I/51erHMLhIzL._SX334_BO1,204,203,200_.jpg" 
+ }
+];
+
+console.log(bookArray[1].title);  
+
+
+/*function ShowBook(){
+    let newElement10 = document.createElement("div");
+    newElement10.setAttribute("id","myBook");
+    document.body.appendChild(newElement10);
+
+    let newElement11 = document.createElement("h2");
+    newElement11.innerHTML= this.title;
+    newElement10.appendChild(newElement11);
+
+    let newElement12 = document.createElement("img");
+    newElement12.setAttribute("src",this.bookLink, "Alt","Book's cover image", "class", "image");
+    newElement12.setAttribute("Alt","Book's cover image");
+    newElement12.setAttribute("class", "image");
+    newElement10.appendChild(newElement12);
+
+    let newElement13 = document.createElement("p");
+    newElement13.innerHTML = "Book's id :" + this.bookId + "<br>" + "Author :" + this.author + "<br>" + "Language :" + this.language + "<br>" + "Number of copies sold :" + this.copiesSold+"<br>" +"<hr>";
+    newElement10.appendChild(newElement13);
+    
+} */
+
+
+for(let i=0;i<10;i++){
+	let newElement10 = document.createElement("div");
+    newElement10.setAttribute("id","myBook");
+	document.body.appendChild(newElement10);
+    
+
+    let newElement11 = document.createElement("h2");
+    newElement11.innerHTML= bookArray[i].title;
+    newElement10.appendChild(newElement11);
+
+    let newElement12 = document.createElement("img");
+    newElement12.setAttribute("src",bookArray[i].bookLink, "Alt","Book's cover image", "class", "image");
+    newElement12.setAttribute("Alt","Book's cover image");
+    newElement12.setAttribute("class", "image");
+    newElement10.appendChild(newElement12);
+
+    let newElement13 = document.createElement("p");
+    newElement13.innerHTML = "Book's id :" + bookArray[i].bookId + "<br>" + "Author :" + bookArray[i].author + "<br>" + "Language :" + bookArray[i].language + "<br>" + "Number of copies sold :" + bookArray[i].copiesSold+"<br>" +"<hr>";
+    newElement10.appendChild(newElement13);  
+	
+	
+}  
+
+
+
+
+
+
+// second method with object constructor
+
+
+
+/*
+
+
 //Open a new js file and start by declaring an array that contains 10 strings. These strings should be of book titles
 // you have read (or made up) and be lowercase without spaces or special characters so that you can use these later
 // as Id's. (Example: Harry Potter's - The Chamber of Secrets -> harry_potter_chamber_secrets).
@@ -96,7 +250,7 @@ Book8.ShowBook();
 Book9.ShowBook();
 Book10.ShowBook();
 
-
+*/
 
 
 
